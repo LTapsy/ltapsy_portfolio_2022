@@ -444,14 +444,15 @@ section.logos{
     background-position: center;
     height:40vh;
     justify-content: center;
-    align-items: flex-end;
+    align-items: center;
+    flex-direction: row;
 }
 
 section.logos ul{
     flex-direction: row;
     flex-wrap: wrap;
     width:500px;
-    margin:0 300px 0 0 ;
+    /* margin:0 300px 0 0 ; */
 }
 
 section.logos ul li{
@@ -472,6 +473,24 @@ section.logos ul li p{
     margin:20px 0 0 0;
 }
 
+.logos a{
+    margin:0 300px 0 0 ;
+}
+
+.logos button{
+    background:dodgerblue;
+    border:1px solid dodgerblue;
+    color:white;
+    margin:40px 0 0 0 ;
+    align-items: center;
+    padding:25px;
+    width:350px;
+}
+
+.logos button:hover{
+    background:skyblue;
+    border:1px solid skyblue;
+}
 
 /* footer */
 
