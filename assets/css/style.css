@@ -504,3 +504,57 @@ footer{
 footer p{
     color:white;
 }
+
+
+/* 00000 */
+
+.oops{
+    display:none;
+    height:100vh;
+    width:100vw;
+    background:black;
+    position: fixed;
+    z-index: 9999999999;
+    justify-content: center;
+    align-items: center;
+}
+
+.oops i{
+    color:white;
+}
+
+.oops h1{
+    color:white;
+    margin:20px 0;
+}
+
+.oops p{
+    color:white;
+    text-align: center;
+    width:80vmin;
+}
+
+.oops button{
+    background:dodgerblue;
+    border:1px solid dodgerblue;
+    color:white;
+    margin:40px 0 0 0 ;
+    align-items: center;
+    padding:25px;
+    width:350px;
+}
+
+.oops button:hover{
+    background:skyblue;
+    border:1px solid skyblue;
+}
+
+@media screen and (max-width: 600px) {
+    nav,header,footer,section{
+        display:none;
+    }
+
+    .oops{
+        display:flex !important;
+    }
+  }
