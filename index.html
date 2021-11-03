@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="assets/css/all.css">
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/mediaQuery.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,7 +16,7 @@
 </head>
 <body>
     <nav>
-        <!-- <i class="fas fa-bars fa-2x"></i> -->
+        <i class="fas fa-bars fa-2x" onclick="dropDownMenu()"></i>
         <ul>
             <li>
                 <a href="#home">HOME</a>
@@ -35,8 +36,42 @@
             <li>
                 <a href="#projects">PROJECTS</a>
             </li>
+            <li>
+                <a href="#resume">RESUME</a>
+            </li>
+            <li>
+                <a href="#contact">CONTACT</a>
+            </li>
         </ul>
     </nav>
+    <div class="dropDown">
+        <ul>
+            <li>
+                <a href="#home">HOME</a>
+            </li>
+            <li>
+                <a href="#about">ABOUT</a>
+            </li>
+            <li>
+                <a href="#skills">SKILLS</a>
+            </li>
+            <li>
+                <a href="#awards">AWARDS</a>
+            </li>
+            <li>
+                <a href="#education">EDUCATION</a>
+            </li>
+            <li>
+                <a href="#projects">PROJECTS</a>
+            </li>
+            <li>
+                <a href="#resume">RESUME</a>
+            </li>
+            <li>
+                <a href="#contact">CONTACT</a>
+            </li>
+        </ul>
+    </div>
     <header id="home">
         <div class="headerWrapper">
             <img src="assets/image/lord.jpg" alt="">
@@ -59,7 +94,9 @@
                     <li>#coder</li>
                     <li>#graphicdesign</li>
                 </ul>
-                <button>LEARN MORE</button>
+                <a href="#about">
+                    <button>LEARN MORE</button>
+                </a>
             </div>
         </div>
     </header>
@@ -72,15 +109,18 @@
         </div>
         <div class="right">
             <p>A Web Developer with extensive Information Technology knowledge, seeking a challenging opportunity where I will be able to utilize my strong organizational skills and high stress tolerance.</p>
-            <button>CONTACT ME</button>
+            <a href="#contact">
+                <button>CONTACT ME</button>
+            </a>
         </div>
     </section>
     
     <section class="skills" id="skills">
-        <div class="circle"></div>
-        <img src="assets/image/pexels-photo-160107.jpeg" class="stockPhoto1" alt="">
-        <img src="assets/image/pexels-bich-tran-669996.jpg" class="stockPhoto2" alt="">
-        
+        <div class="absoluteContainer">
+            <div class="circle"></div>
+            <img src="assets/image/pexels-photo-160107.jpeg" class="stockPhoto1" alt="">
+            <img src="assets/image/pexels-bich-tran-669996.jpg" class="stockPhoto2" alt="">
+        </div>
         <div class="skillsWrapper">
             <h1>Technical Skills</h1>
             <ul>
@@ -236,7 +276,7 @@
     </section>
 
 
-    <section class="logos">
+    <section class="logos" id="resume">
         
         <a href="assets/Resume 3.1.pdf">
             <button>DOWNLOAD RESUME</button>
@@ -262,6 +302,40 @@
     </section>
 
     <footer>
+        <h3 id="contact">Keep in touch!</h3>
+        <p>Call me at 403-890-9725 <br/>or<br/> send me an email at lordtapulao@gmail.com</p>
+        <ul>
+            <li>
+                <a href="https://www.facebook.com/LordSigmonSerg/" target="_blank">
+                    <i class="fab fa-facebook-f fa-2x"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/g35x_tapsy/" target="_blank">
+                    <i class="fab fa-instagram fa-2x"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.youtube.com/channel/UCyvjJ1N_GoGuCM6DDbiyAZA" target="_blank">
+                    <i class="fab fa-youtube fa-2x"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/lord-tapulao-730969195/" target="_blank">
+                    <i class="fab fa-linkedin-in fa-2x"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://github.com/LTapsy" target="_blank">
+                    <i class="fab fa-github-alt fa-2x"></i>
+                </a>
+            </li>
+            <li>
+                <a href="mailto: lordtapulao@gmail.com" target="_blank">
+                    <i class="far fa-envelope fa-2x"></i>
+                </a>
+            </li>
+        </ul>
         <p>&copy Lord Tapulao 2022</p>
     </footer>
 
@@ -276,6 +350,6 @@
     </div>
 
 
-
+<script src="assets/js/app.js"></script>
 </body>
 </html>

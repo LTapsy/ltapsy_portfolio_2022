@@ -12,7 +12,8 @@ nav{
 }
 
 nav i{
-    margin:0 50px 0 0;
+    /* margin:0 50px 0 0; */
+    display:none !important;
 }
 
 nav ul{
@@ -26,6 +27,10 @@ nav ul li{
 nav ul li a{
     color:#000;
     font-weight: bold;
+}
+
+.dropDown{
+    display:none;
 }
 
 /* header */
@@ -169,6 +174,11 @@ section.skills{
     position: relative
 }
 
+section.skills .absoluteContainer{
+    position: relative;
+    top:-200px;
+}
+
 section.skills .circle{
     width:500px;
     height:500px;
@@ -177,7 +187,7 @@ section.skills .circle{
     margin:0 0 50px 0;
     position: absolute;
     left:650px;
-    top:50px;
+    top:0px;
 }
 
 section.skills .stockPhoto1{
@@ -497,12 +507,39 @@ section.logos ul li p{
 footer{
     justify-content: center;
     align-items: center;
-    padding:20px 0;
+    padding:50px 0;
     background:black;
+}
+
+footer h3{
+    font-size: 40px ;
+    color:white;
+    font-weight: bold;
+}
+
+footer ul{
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin:10px 0;
+}
+
+footer span{}
+
+footer ul li{
+    margin:0 10px ;
+}
+
+footer ul li i{
+    color:white;
+}
+
+footer p{
+    margin:20px 0;
 }
 
 footer p{
     color:white;
+    text-align: center;
 }
 
 
@@ -550,11 +587,11 @@ footer p{
 }
 
 @media screen and (max-width: 600px) {
-    nav,header,footer,section{
+    /* nav,header,footer,section{
         display:none;
     }
 
     .oops{
         display:flex !important;
-    }
+    } */
   }
